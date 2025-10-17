@@ -29,6 +29,7 @@ local SupportedGames = {
     [116094657599018] = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/DangerousTruckDriving/refs/heads/main/Beta"))()
     end,
+}
 
 local PlaceId = game.PlaceId
 
