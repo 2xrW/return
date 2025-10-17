@@ -1,4 +1,4 @@
--- Whats up skidders! Skid anything you want <3
+-- Table of supported games
 local SupportedGames = {
     -- Be A Parkour Ninja
     [147848991] = function()
@@ -28,7 +28,7 @@ local SupportedGames = {
     -- Dangerous Truck Driving
     [116094657599018] = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/DangerousTruckDriving/refs/heads/main/Beta"))()
-    end,
+    end
 }
 
 local PlaceId = game.PlaceId
