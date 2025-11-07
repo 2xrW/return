@@ -28,14 +28,49 @@ local SupportedGames = {
     -- Dangerous Truck Driving
     [116094657599018] = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/DangerousTruckDriving/refs/heads/main/Beta"))()
+    end,
+
+    -- Blade Ball
+    [13772394625] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/.gg-returnhub/refs/heads/main/Blade-Ball"))()
+    end,
+
+    -- Murder Mystery 2
+    [142823291] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/gg-returnhub/refs/heads/main/Murderer-Mystery-2"))()
+    end,
+
+    -- SharkBite 2
+    [8908228901] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/returnhub/refs/heads/main/Sharkbite-2"))()
+    end,
+
+    -- Volleyball Legends
+    [73956553001240] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/ggreturnhub/refs/heads/main/Volleyball-Legends"))()
+    end,
+
+    -- The Strongest Battlegrounds
+    [10449761463] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/discord.gg-returnhub/refs/heads/main/The-Strongest-Battlegrounds"))()
+    end,
+
+    -- Evade
+    [9872472334] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/discordgg-returnhub/refs/heads/main/Evade"))()
+    end,
+
+    -- Plants vs Brainrots
+    [127742093697776] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/discord-returnhub/refs/heads/main/Plants-VS-Brainrots"))()
     end
 }
 
 local PlaceId = game.PlaceId
 
 if SupportedGames[PlaceId] then
-    print("Supported game detected! Executing script...")
+    print("✅ Supported game detected! Executing script...")
     SupportedGames[PlaceId]()
 else
-    warn("This game is not supported, join the discord.gg/returnhub for support!")
+    warn("❌ This game is not supported! Join discord.gg/returnhub for support.")
 end
