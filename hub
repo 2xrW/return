@@ -80,6 +80,6 @@ if SupportedGames[PlaceId] then
         warn("❌ Script failed to load:", err)
     end
 else
-    warn("❌ Unsupported game! ID:", PlaceId)
-    warn("Join discord.gg/returnhub for support.")
+    warn("❌ Unsupported game ID:", PlaceId)
+    warn("Join discord.gg/returnhub for support!")
 end
