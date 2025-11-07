@@ -35,6 +35,11 @@ local SupportedGames = {
         loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/.gg-returnhub/refs/heads/main/Blade-Ball"))()
     end,
 
+    -- Blade Ball [New Players Server]
+    [16281300371] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/.gg-returnhub/refs/heads/main/Blade-Ball"))()
+    end,
+
     -- Murder Mystery 2
     [142823291] = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/gg-returnhub/refs/heads/main/Murderer-Mystery-2"))()
@@ -69,8 +74,12 @@ local SupportedGames = {
 local PlaceId = game.PlaceId
 
 if SupportedGames[PlaceId] then
-    print("✅ Supported game detected! Executing script...")
-    SupportedGames[PlaceId]()
+    print("✅ Supported game detected! Executing script for ID:", PlaceId)
+    local success, err = pcall(SupportedGames[PlaceId])
+    if not success then
+        warn("❌ Script failed to load:", err)
+    end
 else
-    warn("❌ This game is not supported! Join discord.gg/returnhub for support.")
+    warn("❌ Unsupported game! ID:", PlaceId)
+    warn("Join discord.gg/returnhub for support.")
 end
