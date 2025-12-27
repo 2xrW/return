@@ -68,6 +68,26 @@ local SupportedGames = {
     -- Plants vs Brainrots
     [127742093697776] = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/discord-returnhub/refs/heads/main/Plants-VS-Brainrots"))()
+    end,
+
+    -- Arcade Basketball (Lobby)
+    [134558434771720] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/Arcade-Basketball/refs/heads/main/Outback"))()
+    end,
+
+    -- Arcade Basketball (Matchmaking)
+    [130736793665498] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/Arcade-Basketball/refs/heads/main/Outback"))()
+    end,
+
+    -- Arcade Basketball (1v1)
+    [91654345256890] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/Arcade-Basketball/refs/heads/main/Outback"))()
+    end,
+
+    -- Arcade Basketball (2v2)
+    [92216849541624] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/Arcade-Basketball/refs/heads/main/Outback"))()
     end
 }
 
@@ -81,5 +101,5 @@ if SupportedGames[PlaceId] then
     end
 else
     warn("❌ Unsupported game ID:", PlaceId)
-    warn("Join discord.gg/returnhub for support!")
+    warn("Join discord.gg/nhT3kA5zuE for support!") 
 end
