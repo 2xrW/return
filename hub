@@ -88,6 +88,11 @@ local SupportedGames = {
     -- Arcade Basketball (2v2)
     [92216849541624] = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/Arcade-Basketball/refs/heads/main/Outback"))()
+    end,
+
+    -- Build A Boat For Treasure
+    [537413528] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/BaBFT/refs/heads/main/Outback"))()
     end
 }
 
@@ -101,5 +106,5 @@ if SupportedGames[PlaceId] then
     end
 else
     warn("❌ Unsupported game ID:", PlaceId)
-    warn("Join discord.gg/nhT3kA5zuE for support!") 
+    warn("Join discord.gg/nhT3kA5zuE for support!")
 end
