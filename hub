@@ -131,8 +131,18 @@ local SupportedGames = {
         LoadFromGitHub("https://raw.githubusercontent.com/2xrW/BL/refs/heads/main/return")
     end,
 
-    -- Basketball Legends (Park & 5v5) 
-    [4931927012] = function()
+    -- Basketball Legends (Park) 
+    [14386691987] = function()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/BL/refs/heads/main/return")
+    end,
+
+    -- Basketball Legends (Custom Server)
+    [17122385635] = function()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/BL/refs/heads/main/return")
+    end,
+
+    -- Basketball Legends (5v5)
+    [71832465156084] = function()
         LoadFromGitHub("https://raw.githubusercontent.com/2xrW/BL/refs/heads/main/return")
     end,
 }
