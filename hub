@@ -1,4 +1,3 @@
-
 local function LoadFromGitHub(url)
     local success, response = pcall(function()
         return game:HttpGet(url)
@@ -144,6 +143,11 @@ local SupportedGames = {
     -- Basketball Legends (5v5)
     [71832465156084] = function()
         LoadFromGitHub("https://raw.githubusercontent.com/2xrW/BL/refs/heads/main/return")
+    end,
+
+    -- Fling Things and People
+    [6961824067] = function()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/FTAP/refs/heads/main/return")
     end,
 }
 
