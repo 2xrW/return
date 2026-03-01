@@ -149,6 +149,11 @@ local SupportedGames = {
     [6961824067] = function()
         LoadFromGitHub("https://raw.githubusercontent.com/2xrW/FTAP/refs/heads/main/return")
     end,
+
+    -- Prison Life
+    [155615604] = function()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/PrisonLife/refs/heads/main/return")
+    end,
 }
 
 
