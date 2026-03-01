@@ -1,119 +1,148 @@
--- Table of supported games
+
+local function LoadFromGitHub(url)
+    local success, response = pcall(function()
+        return game:HttpGet(url)
+    end)
+
+    if success then
+        local runSuccess, runError = pcall(function()
+            loadstring(response)()
+        end)
+
+        if not runSuccess then
+            warn("❌ Script execution failed:", runError)
+        end
+    else
+        warn("❌ Failed to fetch script:", response)
+    end
+end
+
+
+
 local SupportedGames = {
+
     -- Be A Parkour Ninja
     [147848991] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/Be-A-Parkour-Ninja/refs/heads/main/Beta"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/Be-A-Parkour-Ninja/refs/heads/main/Beta")
     end,
 
     -- Motorcycle Mayhem
     [12533625712] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/MotorCycleMayhem/refs/heads/main/BetaScript"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/MotorCycleMayhem/refs/heads/main/BetaScript")
     end,
 
     -- MX World
     [135155039067698] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/MXWorld/refs/heads/main/Beta"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/MXWorld/refs/heads/main/Beta")
     end,
 
     -- Hoopz
     [6229116934] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/67/refs/heads/main/67H"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/67/refs/heads/main/67H")
     end,
 
     -- Hoopz Arena
     [89892874044551] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/67/refs/heads/main/67H"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/67/refs/heads/main/67H")
     end,
 
     -- Dangerous Truck Driving
     [116094657599018] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/DangerousTruckDriving/refs/heads/main/Beta"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/DangerousTruckDriving/refs/heads/main/Beta")
     end,
 
     -- Blade Ball
     [13772394625] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/.gg-returnhub/refs/heads/main/Blade-Ball"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/.gg-returnhub/refs/heads/main/Blade-Ball")
     end,
 
     -- Blade Ball [New Players Server]
     [16281300371] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/.gg-returnhub/refs/heads/main/Blade-Ball"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/.gg-returnhub/refs/heads/main/Blade-Ball")
     end,
 
     -- Murder Mystery 2
     [142823291] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/gg-returnhub/refs/heads/main/Murderer-Mystery-2"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/gg-returnhub/refs/heads/main/Murderer-Mystery-2")
     end,
 
     -- SharkBite 2
     [8908228901] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/returnhub/refs/heads/main/Sharkbite-2"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/returnhub/refs/heads/main/Sharkbite-2")
     end,
 
     -- Volleyball Legends
     [73956553001240] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/ggreturnhub/refs/heads/main/Volleyball-Legends"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/ggreturnhub/refs/heads/main/Volleyball-Legends")
     end,
 
     -- The Strongest Battlegrounds
     [10449761463] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/discord.gg-returnhub/refs/heads/main/The-Strongest-Battlegrounds"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/discord.gg-returnhub/refs/heads/main/The-Strongest-Battlegrounds")
     end,
 
     -- Evade
     [9872472334] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/discordgg-returnhub/refs/heads/main/Evade"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/discordgg-returnhub/refs/heads/main/Evade")
     end,
 
     -- Plants vs Brainrots
     [127742093697776] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/discord-returnhub/refs/heads/main/Plants-VS-Brainrots"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/discord-returnhub/refs/heads/main/Plants-VS-Brainrots")
     end,
 
     -- Arcade Basketball (Lobby)
     [134558434771720] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/Arcade-Basketball/refs/heads/main/Outback"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/Arcade-Basketball/refs/heads/main/Outback")
     end,
 
     -- Arcade Basketball (Matchmaking)
     [130736793665498] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/Arcade-Basketball/refs/heads/main/Outback"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/Arcade-Basketball/refs/heads/main/Outback")
     end,
 
     -- Arcade Basketball (1v1)
     [91654345256890] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/Arcade-Basketball/refs/heads/main/Outback"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/Arcade-Basketball/refs/heads/main/Outback")
     end,
 
     -- Arcade Basketball (2v2)
     [92216849541624] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/Arcade-Basketball/refs/heads/main/Outback"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/Arcade-Basketball/refs/heads/main/Outback")
     end,
 
     -- Build A Boat For Treasure
     [537413528] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/BaBFT/refs/heads/main/Outback"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/BaBFT/refs/heads/main/Outback")
     end,
 
     -- Escape Tsunami For Brainrots!
     [131623223084840] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/ETFB/refs/heads/main/return"))()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/ETFB/refs/heads/main/return")
     end,
 
     -- Escape Tsunami For Brainrots! (New Players)
     [86362492050446] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/ETFB/refs/heads/main/return"))()
-    end
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/ETFB/refs/heads/main/return")
+    end,
+
+    -- Basketball Legends
+    [14259168147] = function()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/BL/refs/heads/main/return")
+    end,
+
+    -- Basketball Legends (Park & 5v5) 
+    [4931927012] = function()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/BL/refs/heads/main/return")
+    end,
 }
+
 
 local PlaceId = game.PlaceId
 
 if SupportedGames[PlaceId] then
     print("✅ Supported game detected! Executing script for ID:", PlaceId)
-    local success, err = pcall(SupportedGames[PlaceId])
-    if not success then
-        warn("❌ Script failed to load:", err)
-    end
+    SupportedGames[PlaceId]()
 else
     warn("❌ Unsupported game ID:", PlaceId)
     warn("Join discord.gg/nhT3kA5zuE for support!")
