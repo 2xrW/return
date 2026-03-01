@@ -93,6 +93,16 @@ local SupportedGames = {
     -- Build A Boat For Treasure
     [537413528] = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/BaBFT/refs/heads/main/Outback"))()
+    end,
+
+    -- Escape Tsunami For Brainrots!
+    [131623223084840] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/ETFB/refs/heads/main/return"))()
+    end,
+
+    -- Escape Tsunami For Brainrots! (New Players)
+    [86362492050446] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2xrW/ETFB/refs/heads/main/return"))()
     end
 }
 
