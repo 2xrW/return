@@ -157,6 +157,16 @@ local SupportedGames = {
     [70845479499574] = function()
         LoadFromGitHub("https://raw.githubusercontent.com/2xrW/bbn/refs/heads/main/outback")
     end,
+
+    -- NBA Champions Basketball
+    [101271234790940] = function()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/NCB/refs/heads/main/outback")
+    end,
+
+    -- NBA Champions Basketball (5v5)
+    [106313794065284] = function()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/NCB/refs/heads/main/outback")
+    end,
 }
 
 local PlaceId = game.PlaceId
