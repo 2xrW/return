@@ -16,8 +16,6 @@ local function LoadFromGitHub(url)
     end
 end
 
-
-
 local SupportedGames = {
 
     -- Be A Parkour Ninja
@@ -154,8 +152,12 @@ local SupportedGames = {
     [155615604] = function()
         LoadFromGitHub("https://raw.githubusercontent.com/2xrW/PrisonLife/refs/heads/main/return")
     end,
-}
 
+    -- Bite By Night
+    [70845479499574] = function()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/bbn/refs/heads/main/outback")
+    end,
+}
 
 local PlaceId = game.PlaceId
 
