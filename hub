@@ -172,6 +172,21 @@ local SupportedGames = {
     [6447798030] = function()
         LoadFromGitHub("https://raw.githubusercontent.com/2xrW/FunkyFriday/refs/heads/main/outback")
     end,
+
+    -- Flood Escape 2
+    [738339342] = function()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/Fe2/refs/heads/main/outback")
+    end,
+
+    -- Flood Escape 2 (Retro)
+    [12339127827] = function()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/Fe2/refs/heads/main/outback")
+    end,
+
+    -- Flood Escape 2 (Community-Made Maps)
+    [11951199229] = function()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/Fe2/refs/heads/main/outback")
+    end,
 }
 
 local PlaceId = game.PlaceId
