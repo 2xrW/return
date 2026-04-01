@@ -167,6 +167,11 @@ local SupportedGames = {
     [106313794065284] = function()
         LoadFromGitHub("https://raw.githubusercontent.com/2xrW/NCB/refs/heads/main/outback")
     end,
+
+    -- Funky Friday
+    [6447798030] = function()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/FunkyFriday/refs/heads/main/outback")
+    end,
 }
 
 local PlaceId = game.PlaceId
