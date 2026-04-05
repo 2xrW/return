@@ -128,6 +128,11 @@ local SupportedGames = {
         LoadFromGitHub("https://raw.githubusercontent.com/2xrW/ETFB/refs/heads/main/return")
     end,
 
+    -- Escape Tsunami For Brainrots! (New Players 2)
+    [131623223084840] = function()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/ETFB/refs/heads/main/return")
+    end,
+
     -- Basketball Legends
     [14259168147] = function()
         LoadFromGitHub("https://raw.githubusercontent.com/2xrW/BL/refs/heads/main/return")
