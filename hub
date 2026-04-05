@@ -58,6 +58,11 @@ local SupportedGames = {
         LoadFromGitHub("https://raw.githubusercontent.com/2xrW/.gg-returnhub/refs/heads/main/Blade-Ball")
     end,
 
+        -- Blade Ball [Dungeons]
+    [16456370330] = function()
+        LoadFromGitHub("https://raw.githubusercontent.com/2xrW/.gg-returnhub/refs/heads/main/Blade-Ball")
+    end,
+
     -- Murder Mystery 2
     [142823291] = function()
         LoadFromGitHub("https://raw.githubusercontent.com/2xrW/gg-returnhub/refs/heads/main/Murderer-Mystery-2")
